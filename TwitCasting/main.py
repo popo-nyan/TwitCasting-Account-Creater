@@ -1,7 +1,7 @@
 import httpx
 import string
 import secrets
-from util import authorizekey_calculating, tc_ss_calculating
+from utils import authorizekey_calculating, tc_ss_calculating
 
 
 def main() -> None:
