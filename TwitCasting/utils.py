@@ -9,7 +9,7 @@ def authorizekey_calculating(http_method: str,
                              payload: dict = None) -> str:
     timestamp = str(int(time.time()))
     if payload is None:
-        return timestamp + "." + hashlib.md5(str("#&a@0z1.!" + timestamp + +http_method + endpoint + session_key).encode()).hexdigest()
+        return timestamp + "." + hashlib.md5(str("#&a@0z1.!" + timestamp + http_method + endpoint + session_key).encode()).hexdigest()
     return timestamp + "." + hashlib.md5(str("#&a@0z1.!" + timestamp + http_method + endpoint + session_key + json.dumps(payload)).encode()).hexdigest()
 
 
