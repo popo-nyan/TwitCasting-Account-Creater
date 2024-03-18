@@ -1,6 +1,6 @@
-import hashlib
 import json
 import time
+import hashlib
 
 
 def calculate_authorize(http_method: str,

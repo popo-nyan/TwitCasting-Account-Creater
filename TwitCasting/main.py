@@ -1,9 +1,9 @@
-import random
-
 import httpx
 import string
+import random
 import secrets
-from utils import calculate_authorize, calculate_tc_ss
+
+from utils import calculate_authorize
 
 
 def main(email_address: str,
