@@ -8,5 +8,4 @@ python -m pip install httpx
 python TwitCasting/main.py
 ```
 # 連絡先
-- Discord: qoo.nyan
 - Matrix: @qoo.nyan:usesarchbtw.lol
