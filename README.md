@@ -1,6 +1,6 @@
 # TwitCasting
 ツイキャスのアプリ版でアカウントを自動で作成します。
-# Using
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
