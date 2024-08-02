@@ -8,4 +8,4 @@ python -m pip install httpx
 python TwitCasting/main.py
 ```
 # 連絡先
-- Matrix: @qoo.nyan:usesarchbtw.lol
+- Matrix: [@kounomiya-cat:matrix.org](https://matrix.to/#/@kounomiya-cat:matrix.org)
