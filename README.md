@@ -8,4 +8,4 @@ python -m pip install httpx
 python TwitCasting/main.py
 ```
 # 連絡先
-- Matrix: [@kounomiya-cat:matrix.org](https://matrix.to/#/@kounomiya-cat:matrix.org)
+- Email [kounomiya@tuta.io](mailto:kounomiya@tuta.io)
