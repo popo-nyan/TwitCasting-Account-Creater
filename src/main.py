@@ -62,7 +62,7 @@ class Client:
         data = "#&a@0z1.!" + timestamp + http_method.upper() + endpoint + session_key
         if payload is not None:
             data += json.dumps(payload)
-        print(data)
+
         return timestamp + "." + hashlib.md5(data.encode()).hexdigest()
 
     @staticmethod
@@ -108,13 +108,13 @@ class Client:
         else:
             return {"success": False}
 
-    def agree_privacy_policy(self, user_id: str, session_keu: str) -> dict[str, bool]:
+    def agree_privacy_policy(self, user_id: str, session_key: str) -> dict[str, bool]:
         self._headers["Userid"] = f"c:{user_id}"
-        self._headers["Sessionkey"] = session_keu
+        self._headers["Sessionkey"] = session_key
         self._headers["X-Authorizekey"] = self._calculate_authorize(
             http_method="post",
             endpoint="/privacy_policy/agree",
-            session_key=session_keu,
+            session_key=session_key,
         )
         response = self.__session.post("/privacy_policy/agree", headers=self._headers)
 
@@ -123,11 +123,11 @@ class Client:
         else:
             return {"success": False}
 
-    def verify_age(self, session_keu: str) -> dict[str, bool]:
+    def verify_age(self, session_key: str) -> dict[str, bool]:
         self._headers["X-Authorizekey"] = self._calculate_authorize(
             http_method="post",
             endpoint="/verify_age",
-            session_key=session_keu,
+            session_key=session_key,
             payload={"over20": True},
         )
 
