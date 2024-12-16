@@ -8,4 +8,5 @@ python -m pip install httpx
 python src/main.py
 ```
 # 連絡先
+- Discord: popo.nyan
 - Email [kounomiya@tuta.io](mailto:kounomiya@tuta.io)
